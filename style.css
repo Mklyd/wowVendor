@@ -32,14 +32,21 @@ li {
 }
 /*main*/
 .banner-block{
+    color: white;
     display: flex;
     background: url(img/banner-background.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
     align-items: center;
-
+    border-radius: 16px;
 }
 .banner-description {
     width: 264px;
-    margin: 16px;
+   
+    margin-left: 72px;
+}
+
+.banner-img {
+    margin-top: -39px;
+    margin-right: 97px;
 }
