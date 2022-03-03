@@ -1,9 +1,14 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(Inter/static/Inter-Black.ttf) format('ttf');
+   }
 * {
     margin: 0 auto;
     box-sizing: border-box;
 }
 
 body {
+    font-family: 'Inter';
     width: 1220px;
 }
 li {
@@ -18,4 +23,23 @@ li {
 
 .nav {
     display: flex;
+}
+.btn {
+    padding: 10px 18px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+
+}
+/*main*/
+.banner-block{
+    display: flex;
+    background: url(img/banner-background.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+
+}
+.banner-description {
+    width: 264px;
+    margin: 16px;
 }
