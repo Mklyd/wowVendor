@@ -9,9 +9,8 @@ body {
     font-size: 16px;
     background: #E5E5E5;
     color: #101828;
-    
-    letter-spacing: 0.38px;
-    line-height: 20px;
+    line-height: 24px;
+    font-weight: 400;
 }
 li {
     list-style: none;
@@ -107,9 +106,8 @@ header {
     font-size: 16px;
 }
 /*main*/
-main {
+main{
     width: 1220px;
-
 }
 
 /* banner */
@@ -127,8 +125,9 @@ main {
     display: inline-flex;
     padding: 0;
     text-align: start;
-    margin-top: 37px;
-    margin-bottom: 29px;
+    margin-top: 35px;
+    margin-bottom: 26px;
+
 }
 .breadcrumb-item {
     font-size: 14px;
@@ -151,19 +150,21 @@ main {
     margin-top: 19px;
     margin-bottom: 59px;
 }
+
+/* BANNER INFO */
 .banner-description {
-    
     margin-left: 75px;
 }
 .banner-title {
     font-size: 40px;
     font-weight: 600;
     line-height: normal;
+    padding-top: 9px;
 }
 .banner-description p {
     margin: 30px 0;
     line-height: 24px;
-
+    margin: 22px 0 32px;
 }
 .banner-btn {
     margin-bottom: 32px;
@@ -252,70 +253,74 @@ select {
 .product-card {
     background-color: white;
     width: 280px;
-    height: 475px;
+    height: 495px;
     border-radius: 12px;
+
 }
 
 .product-card img {
     margin: 12px 12px 0;
     width: fit-content;
 }
-.price {
-    border-top: 1px solid #EAECF0;
-    padding: 20px 2px 21px;
-}
-
 .product-description {
-    margin: 14px 22px 24px;
+    margin: 12px 22px 24px;
 }
 .product-info {
     height: 160px;
-    margin-bottom: 22px;
+    margin-bottom: 40px;
+    
 }
 .product-info-title  {
-    margin-bottom:14px ;
+    margin-bottom: -4px;
+    margin-left: 3px;
 }
 .product-card h6 {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 600;
-    margin-top: 16px;
+    margin-top: 11px;
 }
 .product-card p{
     font-size: 14px;
     color: #98A2B3;
+    line-height: 20px;
+    font-weight:300;
 }
 .product-rate {
     font-size: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+    margin-top: 12px;
+}
+.price {
+    border-top: 1px solid #EAECF0;
+    padding: 17px 2px 21px;
 }
 .product-price-old {
     color: #D0D5DD;
-    margin-left: 0;
-
+    margin-right: 8px;
 }
 .product-price-new {
     font-weight: 600;
-    margin-right: 83px;
+    margin-right: 78px;
 }
 .product-sale {
     font-weight: 600;
     font-size: 12px;
-    line-height: 18px;
     background: #669F2A;
     border-radius: 4px;
     color: #fff;
-    padding: 4px 6px;
+    padding: 6px 6px;
     margin-right: 0;
 }
 .product-category {
     font-weight: 400;
     font-size: 12px;
     border-radius: 4px;
-    padding: 2px 8px;
+    padding: 2px 5px;
 }
 .product-category::before {
     content: "•";
     font-size: large;
+    padding-right: 1px;
 }
 .shooter {
     color: #7F56D9;
@@ -343,9 +348,103 @@ select {
     background: #F0F9FF;
 }
 /* footer */
+.questions {
+    width: 1220px;
+}
+.questions-title {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 44px;
+    
+}
+.questions-title p {
+    margin-top: 20px;
+}
+.question-title {
+    display: flex;
+    align-items: center;
+}
+.question-title h4 {
+    margin-left: 0;
+   
+}
+.question-title svg {
+    margin-right: 0;
+}
+.question h4 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.question h5 {
+    font-weight: 500;
+    font-size: 16px;
+}
+.question {
+    border-bottom: 1px solid #D0D5DD;
+    padding-bottom: 40px;
+    padding-top: 24px;
+}
+.question > * {
+    margin-bottom: 24px;
+}
+.question p, li {
+    color: #667085;
+    font-weight: 300;
+}
+.question li::before {
+    content: "•";
+    font-size: large;
+    padding-right: 12px;
+    color: #7F56D9;
+}
+footer a {
+    color: white;
+}
+footer a:hover {
+    color: #98A2B3;
+}
 
 
 
+.footer-nav span {
+    font-size: 14px;
+    color: #98A2B3;
+}
+
+.footer-nav {
+    background-color: #1D2939;
+    color: white;
+}
+.footer-subscribe {
+    text-align: center;
+}
+.footer-subscribe p {
+    color: #98A2B3;
+}
+.email {
+    width: 470px;
+    padding: 10px 18px;
+    border-radius: 8px;
+}
+.email-btn {
+    padding: 10px 18px;
+    color: white;
+    background-color: #7F56D9;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+}
+
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 280px);
+    justify-content: center;
+}
+.copyright {
+    font-size: 14px;
+    color: #667085 ;
+}
 @media (max-width: 1024px) {
     .products {
         display: grid;
