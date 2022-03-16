@@ -61,9 +61,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1220px;
-    height: 72px;
-    
 }
 
 .top-nav p {
@@ -73,31 +70,20 @@ header {
     margin-left: 6px;
     margin-bottom: 3px;
 }
-.location {
-    margin-left: -2px;
-    margin-top: -3px;
-}
-.logo {
-    margin-top: 3px;
-    margin-left: 147px;
-}
+
+
 .cart {
     display: flex;
-    margin-top: 3px;
-    margin-right: -17px;
+
 }
 .cart li {
     margin: 0 22px;
 }
 .categories {
-    display: flex;
-    align-items: center;
+    display: grid;
     justify-content: center;
-    width: 1220px;
-    height: 64px;
-}
-.categories li {
-    padding: 36.4px;
+    grid-auto-flow: column;
+    gap: 72px;
 }
 .btn {
     padding: 10px 18px;
@@ -106,24 +92,18 @@ header {
     font-size: 16px;
 }
 /*main*/
-
+ main {
+    width: 1220px;
+ }
 /* banner */
-.banner-block{
-    color: white;
-    display: flex;
-    background: url(img/banner-background.jpeg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    align-items: center;
-    border-radius: 16px;
-    margin-top: 40px;
-}
+
+
+/* BANNER BREADCRUMB */
+
 .transparent {
     display: inline-flex;
     padding: 0;
     text-align: start;
-    margin-top: 35px;
-    margin-bottom: 26px;
 
 }
 .breadcrumb-item {
@@ -149,8 +129,21 @@ header {
 }
 
 /* BANNER INFO */
+.banner-block{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    background: url(img/banner-background.jpeg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    background-position-x: center;
+    border-radius: 16px;
+}
 .banner-description {
-    margin-left: 75px;
+    margin: 0;
+    width: 312px;
 }
 .banner-title {
     font-size: 40px;
@@ -162,14 +155,14 @@ header {
     margin: 30px 0;
     line-height: 24px;
     margin: 22px 0 32px;
+    
 }
 .banner-btn {
     margin-bottom: 32px;
 }
 .banner-img {
-    margin-top: -39px;
-    margin-right: 97px;
-    margin-left: 31px;
+    margin: 0;
+  
 }
 
 
@@ -185,7 +178,6 @@ header {
     
 }
 select {
-    width: 296px;
     background: #FFFFFF;
     border: 1px solid #D0D5DD;
     border-radius: 8px;
@@ -204,8 +196,6 @@ select {
     background: #FFFFFF;
     border: 1px solid #D0D5DD;
     border-radius: 8px;
-    width: 592px;
-    height: 44px;
     border-radius: 5px;
     display:flex;
     flex-direction:row;
@@ -250,8 +240,6 @@ select {
 
 .product-card {
     background-color: white;
-    width: 280px;
-    height: 495px;
     border-radius: 12px;
 
 }
@@ -347,7 +335,7 @@ select {
 }
 /* footer */
 .questions {
-    width: 1220px;
+    margin: 0 112px;
 }
 .questions-title {
     text-align: center;
@@ -421,7 +409,6 @@ footer a:hover {
     color: #98A2B3;
 }
 .email {
-    width: 470px;
     padding: 10px 18px;
     border-radius: 8px;
 }
@@ -436,39 +423,57 @@ footer a:hover {
 
 .footer-links {
     display: grid;
-    grid-template-columns: repeat(4, 280px);
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
 }
 .copyright {
     font-size: 14px;
     color: #667085 ;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1220px) {
+    main { width: 93%; }
+   .questions { margin: 0 24px;}
+
     .products {
-        display: grid;
-        justify-content: center;
         grid-template-columns: repeat(3, 280px);
-        margin-top: 40px;
-        grid-gap: 32px;
+    } 
+    .categories {
+        gap: 45.33px;
+    }
+    .banner-description {
+        width: 280px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .products {
+        grid-template-columns: repeat(2, 280px);
     }   
+
+    .banner-block {
+        background: url(img/banner-max-768.jpeg);
+    }  
+    .banner-img {
+        display: none;
+    }
+    .cart {
+        display: none;
+    }
+    .location {
+        display: none;
+    }
+    .categories {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
     .products {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(2, 280px);
-        margin-top: 40px;
-        grid-gap: 32px;
-    }   
-}
-
-@media (max-width: 320px) {
-    .products {
-        display: grid;
-        justify-content: center;
         grid-template-columns: repeat(1, 280px);
-        margin-top: 40px;
-        grid-gap: 32px;
-    }   
+    } 
+    .banner-description {
+        width: 216px;
+    }
+
 }
