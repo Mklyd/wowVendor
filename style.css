@@ -80,10 +80,8 @@ header {
     margin: 0 22px;
 }
 .categories {
-    display: grid;
-    justify-content: center;
-    grid-auto-flow: column;
-    gap: 72px;
+    display: flex;
+    width: 1300px;
 }
 .btn {
     padding: 10px 18px;
@@ -134,7 +132,7 @@ header {
     display: flex;
     flex-direction: row;
     background: url(img/banner-background.jpeg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
     justify-content: center;
@@ -438,7 +436,7 @@ footer a:hover {
         grid-template-columns: repeat(3, 280px);
     } 
     .categories {
-        gap: 45.33px;
+        width: 98%;
     }
     .banner-description {
         width: 280px;
