@@ -183,6 +183,7 @@ header {
     margin-top: 60px;
     display: flex;
 }
+
 .filters-title {
     color: #667085;
     font-size: 14px;
@@ -197,7 +198,7 @@ select {
     padding-left: 20px;
     margin: 0;
     margin-top: 4px;
-    
+    width: 296px;
 }
 
 /* search */
@@ -214,6 +215,7 @@ select {
     padding-left: 20px;
     margin: 0;
     margin-top: 4px;
+    width: 592px;
 }
 .search form:hover {
     border: 1px solid  #667085;
@@ -231,7 +233,7 @@ select {
 }
 /* FILTERS */
 .filter {
-
+    margin: 0 16px;
 }
 
 /* sort by*/
@@ -497,6 +499,12 @@ footer a:hover {
     .categories li {
        
     }
+    .search form {
+        width: 480px;
+    }
+    select {
+        width: 232px;
+    }
     .banner-description {
         width: 280px;
     }
@@ -530,6 +538,12 @@ footer a:hover {
     .categories {
         display: none;
     }
+    .search form {
+        width: 352px;
+    }
+    select {
+        width: 168px;
+    }
     .footer-subscribe {
         flex-direction: column;
         align-items: flex-start;
@@ -558,6 +572,17 @@ footer a:hover {
     }
     .banner-description {
         width: 216px;
+    }
+    .filters {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .search form {
+        width: 280px;
+    }
+    select {
+        width: 232px;
     }
     .products {
         grid-template-columns: repeat(1, 280px);
