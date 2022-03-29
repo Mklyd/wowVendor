@@ -40,6 +40,90 @@ a:hover {
     color: #7F56D9;
     
 }
+/* Ticker Banner */
+
+#banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  #banner #pics {
+    white-space: nowrap;
+    position: relative;
+    transition: 0.5s;
+    left: 0;
+  }
+  #banner #pics .pic {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  #banner #pics .pic img {
+    display: block;
+    width: 100%;
+  }
+  #banner #dots {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    text-align: center;
+  }
+  #banner #dots .dot {
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  #banner #dots .dot.active {
+    background: yellow;
+  }
+  @media not all and (hover: none), (-ms-high-contrast: none) {
+    #banner #dots .dot:hover {
+      background: yellow;
+    }
+  }
+  #banner #prev, #banner #next {
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+  }
+  #banner #prev::before, #banner #next::before {
+    content: "";
+    display: block;
+    background: rgba(255, 255, 255, 0.5);
+    width: 30px;
+    height: 50px;
+  }
+  #banner #prev#prev, #banner #next#prev {
+    left: 0;
+  }
+  #banner #prev#prev::before, #banner #next#prev::before {
+    -webkit-clip-path: polygon(100% 0%, calc(100% - 8px) 0%, 0 50%, calc(100% - 8px) 100%, 100% 100%, 8px 50%);
+  }
+  #banner #prev#next, #banner #next#next {
+    right: 0;
+  }
+  #banner #prev#next::before, #banner #next#next::before {
+    -webkit-clip-path: polygon(0% 0%, 8px 0%, 100% 50%, 8px 100%, 0% 100%, calc(100% - 8px) 50%);
+  }
+  @media not all and (hover: none), (-ms-high-contrast: none) {
+    #banner #prev:hover, #banner #next:hover {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+
 /*navigation*/
 header {
     box-shadow: 0px 12px 12px -4px rgba(16, 24, 40, 0.02);
@@ -203,7 +287,9 @@ select {
 
 /* search */
 
-  
+.search {
+    margin: 0;
+}
 .search form {
     background: #FFFFFF;
     border: 1px solid #D0D5DD;
@@ -239,7 +325,7 @@ select {
 /* sort by*/
 
 .sort {
-    
+    margin: 0;
 }
 
 /* PRODUCTS CARD*/
