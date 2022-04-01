@@ -41,7 +41,6 @@ a:hover {
     
 }
 /* Ticker Banner */
-
 /* slider обертка */
 .slider {
 	position: relative;
@@ -326,7 +325,24 @@ select {
     grid-gap: 32px;
     justify-content: center;
 }
+.add-card {
+    border: 2px dashed #D6BBFB;
+    border-radius: 12px;
+    height: 519px;
+    width: 280px;
+    background-color: transparent !important;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.add-btn {
+    background: #7F56D9;
+    color: white;
+    padding: 10px 55px;
+
+}
 .product-card {
     background-color: white;
     border-radius: 12px;
@@ -608,7 +624,7 @@ footer a:hover {
     .location {
         margin-left: 0;
     }
-  
+    
     
     .search form {
         width: 352px;
@@ -656,9 +672,15 @@ footer a:hover {
     select {
         width: 232px;
     }
+    .add-card {
+        height: 192px;
+    }
     .products {
         grid-template-columns: repeat(1, 280px);
     } 
+    .product-card {
+        width: 280px;
+    }
     .questions-title {
         text-align: start;
         margin-top: 60px;
