@@ -25,3 +25,14 @@ const ratings = {
         const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
         document.querySelector(`.${rating} .stars-inner`).style.width = starPercentageRounded;   
   }
+
+//filters
+
+const filter = {
+      shooter,
+      multiplayer_RPG,
+      actio,
+      card_game,
+      strategy,
+      action_RPG,
+}
