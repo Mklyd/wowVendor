@@ -28,11 +28,26 @@ const ratings = {
 
 //filters
 
-const filter = {
+/* const filter = {
       shooter,
       multiplayer_RPG,
       actio,
       card_game,
       strategy,
       action_RPG,
+}
+ */
+
+
+//pages
+
+let pages = document.getElementById('pages')
+for(let i = 1; i < 100; i++) {
+      if(i <= 5) {
+            pages.innerHTML = pages.innerHTML + "<span>" + i + "</span>"
+      }
+      else if(i > 5 ) {
+            pages.innerHTML = pages.innerHTML + "<span>" + "..." + "99" 
+            break
+      }
 }

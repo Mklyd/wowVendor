@@ -476,6 +476,18 @@ select {
     color: #0086C9;
     background: #F0F9FF;
 }
+
+
+/* PAGES */
+#pages {
+    width: 404px;
+    height: 52px;
+    background-color: #fff;
+
+}
+
+
+
 /* footer */
 .questions {
     max-width: 1220px;
@@ -784,7 +796,10 @@ border: 1.6px solid #101828;
     .mobile-filters p {
         margin: 0 0 0 10px;
     }
-    .mobile-filters svg {
+    .mobile-filters span:hover {
+        color: #7F56D9;
+    }
+    .mobile-filters span {
         margin: 0;
     }
     .add-card {
