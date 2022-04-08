@@ -41,13 +41,22 @@ const ratings = {
 
 //pages
 
-let pages = document.getElementById('pages')
-for(let i = 1; i < 100; i++) {
+const pages = document.getElementById('pages')
+
+
+for( let i = 1; i < 100; i++) {
       if(i <= 5) {
-            pages.innerHTML = pages.innerHTML + "<span>" + i + "</span>"
+            pages.innerHTML = pages.innerHTML + "<a>" + i + "</a>"
+
       }
       else if(i > 5 ) {
-            pages.innerHTML = pages.innerHTML + "<span>" + "..." + "99" 
+            pages.innerHTML = pages.innerHTML + "<a>" + "..." + "</a>" + "<a>"+ "99" + "</a>"
             break
       }
 }
+/* const page = pages.firstElementChild
+page.style.backgroundColor = '#7F56D9'
+page.style.color = '#fff' */
+
+//product-card clear 
+

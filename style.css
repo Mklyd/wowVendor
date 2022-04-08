@@ -38,7 +38,10 @@ a {
 }
 a:hover {
     color: #7F56D9;
-    
+}
+#pages a:hover, .banner-btn:hover {
+    background-color: #F9F5FF;
+    color: #7F56D9;
 }
 /* Ticker Banner */
 /* slider обертка */
@@ -160,9 +163,14 @@ header {
 
 .btn {
     padding: 10px 18px;
-    border: 1px solid #D0D5DD;
+    border: none;
+    background-color: #7F56D9;
     border-radius: 8px;
     font-size: 16px;
+    color: #fff;
+}
+.btn:hover {
+    background-color: #6941C6;
 }
 /*main*/
  main {
@@ -235,6 +243,12 @@ header {
 .banner-img {
     margin: 0 0 33px;
     
+}
+.banner-btn {
+    padding: 10px 18px;
+    border: 1px solid #D0D5DD;
+    border-radius: 8px;
+    font-size: 16px;
 }
 
 
@@ -329,22 +343,24 @@ select {
     justify-content: center;
 }
 
-.add-btn {
-    background: #7F56D9;
-    color: white;
-    padding: 10px 55px;
 
-}
 .product-card {
     background-color: white;
     border-radius: 12px;
-
 }
-
-.product-card img {
+.product-card:hover {
+    box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.06), 0px 12px 12px -4px rgba(16, 24, 40, 0.02);
+}
+.product-img {
     margin: 12px 12px 0;
-    width: fit-content;
+    overflow: hidden;
+     border-radius: 12px; 
 }
+.product-card:hover img{
+    transform: scale(1.1);
+    transition:  all 0.4s cubic-bezier(0.31, 0.32, 0.52, 0.76);
+}
+
 .product-description {
     margin: 12px 22px 24px;
 }
@@ -479,14 +495,32 @@ select {
 
 
 /* PAGES */
+.pagination {
+    width: 100%;
+    background-color: #fff;
+    margin-top: 40px;
+    border-radius: 12px; 
+    height: 52px;
+}
 #pages {
     width: 404px;
-    height: 52px;
-    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
 
 }
+#pages a {
+    margin:6px 8px;
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: #101828;
+}
 
-
+#pages a:active {
+    background-color: #7F56D9;
+    color: #fff;
+}
 
 /* footer */
 .questions {
@@ -589,11 +623,7 @@ footer a:hover {
 }
 .email-btn {
     padding: 10px 17px;
-    color: white;
-    background-color: #7F56D9;
-    border-radius: 8px;
-    margin: 0;
-    border: 1px solid #7F56D9;
+
     width: 114px;
     margin-left: 8px;
 }
