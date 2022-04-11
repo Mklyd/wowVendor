@@ -60,3 +60,26 @@ page.style.color = '#fff' */
 
 //product-card clear 
 
+function showHide(element_id) {
+      let hide = document.getElementById("hide")
+      let show = document.getElementById("show")
+      //Если элемент с id-шником element_id существует
+      if (document.getElementById(element_id)) { 
+          //Записываем ссылку на элемент в переменную obj
+          var obj = document.getElementById(element_id); 
+          //Если css-свойство display не block, то: 
+          if (obj.style.display != "block") { 
+              obj.style.display = "block"; //Показываем элемент
+              hide.style.display = "block"
+              show.style.display = "none"
+              
+          }
+          else {
+            obj.style.display = "none"; //Скрываем элемент
+            hide.style.display = "none"
+            show.style.display = "block"
+          }
+      }
+      //Если элемент с id-шником element_id не найден, то выводим сообщение
+      else alert("Элемент с id: " + element_id + " не найден!"); 
+  }   
