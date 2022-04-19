@@ -1,4 +1,4 @@
-//rating
+//Реализация рейтинга
 
 const ratings = {
     saints_row : 0,
@@ -17,7 +17,7 @@ const ratings = {
     dragon_age_5: 4,
   };
   
-  // total number of stars
+  // количество звезд
   const starTotal = 5;
   
   for(const rating in ratings) {
@@ -26,7 +26,30 @@ const ratings = {
         document.querySelector(`.${rating} .stars-inner`).style.width = starPercentageRounded;   
   }
 
-//filters
+//add card button
+let add_btn = document.querySelector('.add-btn')
+let add_spinner = document.querySelector('.add-spinner')
+
+add_btn.addEventListener("click", function() {    
+      add_spinner.classList.remove()
+      add_btn.innerHTML
+      add_btn.classList.toggle('refresh-btn');     
+})
+
+//spinner button
+
+let clear_btn = document.querySelectorAll('.clear-btn')
+
+for(let spinner of clear_btn) {
+    
+      spinner.addEventListener("click", function() {    
+            spinner.classList.toggle('refresh-btn');     
+    });}
+
+    
+
+
+//фильтры
 
 /* const filter = {
       shooter,
@@ -39,7 +62,7 @@ const ratings = {
  */
 
 
-//pages
+//Выведение страниц
 
 const pages = document.getElementById('pages')
 
@@ -58,7 +81,7 @@ for( let i = 1; i < 100; i++) {
 page.style.backgroundColor = '#7F56D9'
 page.style.color = '#fff' */
 
-//product-card clear 
+//Функция для показа и скрытия текста 
 
 function showHide(element_id) {
       let hide = document.getElementById("hide")

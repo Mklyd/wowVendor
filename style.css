@@ -342,15 +342,57 @@ select {
     flex-direction: column;
     justify-content: center;
 }
+.product-btn {
+    display: none;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #D92D20;
+    color: white;
+    border: none;
+    top: 20px;
+    right: 20px;
+}
+ .clear-btn::before {
+    content: url("img/clear.svg");
+}
+
+.product-card:hover .product-btn {
+    display: block;
+    
+}
+.refresh-btn::before {
+    content: url('img/load.svg');  
+}
+.refresh-btn {
+    animation: spinner 1s linear infinite;
+}
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 
 .product-card {
     background-color: white;
     border-radius: 12px;
+    position: relative;
 }
 .product-card:hover {
+    
     box-shadow: 0px 20px 24px -4px rgba(16, 24, 40, 0.06), 0px 12px 12px -4px rgba(16, 24, 40, 0.02);
 }
+
+
 .product-img {
     margin: 12px 12px 0;
     overflow: hidden;
@@ -501,17 +543,23 @@ select {
     margin-top: 40px;
     border-radius: 12px; 
     height: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination div {
+    margin: 0;
 }
 #pages {
     width: 404px;
     display: flex;
     justify-content: center;
     align-items: center;
- 
-
 }
+
+
 #pages a {
-    margin:6px 8px;
+    
     padding: 8px 14px;
     border-radius: 8px;
     color: #101828;
@@ -804,41 +852,18 @@ footer a:hover {
         border: 1px solid #D0D5DD;
 
     }
-    .filters-icon {
-        /* Vector */
-
-/* Icon / Filter */
-
-position: relative;
-width: 20px;
-height: 20px;
-
-
-
-/* Vector */
-
-position: absolute;
-left: 10%;
-right: 10%;
-top: 25%;
-bottom: 25%;
-
-/* Content/900 */
-border: 1.6px solid #101828;
-
-
-    }
+    
     .mobile-filters:hover{
         background-color: #D0D5DD;
         color: #7F56D9;
     }
-
+    .mobile-filters:hover span {
+        color: #7F56D9;
+    }
     .mobile-filters p {
         margin: 0 0 0 10px;
     }
-    .mobile-filters span:hover {
-        color: #7F56D9;
-    }
+
     .mobile-filters span {
         margin: 0;
     }
@@ -850,6 +875,9 @@ border: 1.6px solid #101828;
     } 
     .product-card {
         width: 280px;
+    }
+    .pagination-arrow {
+        margin: 10px;
     }
     .questions-title {
         text-align: start;
