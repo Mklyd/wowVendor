@@ -29,13 +29,16 @@ const ratings = {
 //add card button
 let add_btn = document.querySelector('.add-btn')
 let add_spinner = document.querySelector('.add-spinner')
+let add_spinner_img = document.querySelector('.add-spinner_img')
+let add_btn_text = document.querySelector('.add-btn_text');
 
 add_btn.addEventListener("click", function() {    
-      add_spinner.classList.remove()
-      add_btn.innerHTML
-      add_btn.classList.toggle('refresh-btn');     
-})
+      add_spinner_img.classList.add("refresh-btn")
+      add_btn_text.innerHTML = 'Additing';
+})                   
 
+add_card = 
+  
 //spinner button
 
 let clear_btn = document.querySelectorAll('.clear-btn')

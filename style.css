@@ -342,6 +342,16 @@ select {
     flex-direction: column;
     justify-content: center;
 }
+.add-spinner_img::before {
+    content: url("img/add-btn.svg");
+}
+.add-btn {
+    display: flex;
+    align-items: center;
+}
+.add-spinner {
+    margin-right: 10px;
+}
 .product-btn {
     display: none;
     position: absolute;
@@ -364,6 +374,7 @@ select {
 }
 .refresh-btn::before {
     content: url('img/load.svg');  
+   
 }
 .refresh-btn {
     animation: spinner 1s linear infinite;
