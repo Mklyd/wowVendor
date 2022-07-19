@@ -37,7 +37,6 @@ add_btn.addEventListener("click", function() {
       add_btn_text.innerHTML = 'Additing';
 })                   
 
-add_card = 
   
 //spinner button
 
